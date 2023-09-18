@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container reference">
+        <div class="initial reference" id="ini">
+            <!-- <input type="datetime" name="" id="time" placeholder="00:00:00:00"> -->
+            <div class="inputs reference">
+                <input type="number" name="" id="Days" value="" placeholder="D" autocomplete="off">
+                <p class="seperator">:</p>
+                <input type="number" name="" id="Hours" value="" placeholder="H" autocomplete="off">
+                <p class="seperator">:</p>
+                <input type="number" name="" id="Minutes" value="" placeholder="M" autocomplete="off">
+                <p class="seperator">:</p>
+                <input type="number" name="" id="Seconds" value="" placeholder="S" autocomplete="off">
+            </div>
+            <button class="button-style" onclick="start()">Start</button>
+        </div>
+
+        
+        <div class="start reference" id="sta">
+            <div class="buttons reference">
+                <button class="stop button-style" onclick="stop()">Stop</button>
+                <button class="restart button-style" onclick="restart()">Restart</button>
+                <button class="pause button-style" onclick="pause()">Pause</button>
+            </div>
+            <div class="time reference">
+                <div class="dayss reference">
+                    <p class="days-para" id="days">00</p>
+                    <!-- <input  class="days-para"  type="number" name="" id="days" value="" placeholder="00"> -->
+                    <p class="tag">days</p>
+                </div>
+                <p class="seperator">:</p>
+                <div class="hours reference">
+                    <p class="hours-para" id="hrs">00</p>
+                    <!-- <input  class="hours-para"  type="number" name="" id="hrs" value="" placeholder="00"> -->
+                    <p class="tag">hrs</p>
+                </div>
+                <p class="seperator">:</p>
+                <div class="minutes reference">
+                    <p class="minutes-para" id="min">00</p>
+                    <!-- <input  class="minutes-para"  type="number" name="" id="min" value="" placeholder="00"> -->
+                    <p class="tag">min</p>
+                </div>
+                <p class="seperator">:</p>
+                <div class="seconds reference">
+                    <p class="seconds-para" id="sec">00</p>
+                    <!-- <input  class="seconds-para"  type="number" name="" id="sec" value="" placeholder="00"> -->
+                    <p class="tag">sec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

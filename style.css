@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/IMG_20230312_135958.jpg");
+    background-size: cover;
+    /* #fff5d7 */
+}
+
+.reference{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border:1px solid rgba(255,255,255,.5) ;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+
+
+
+.initial{
+    visibility: visible;
+    justify-content: space-around;
+    height: 100px;
+    width: 250px;
+}
+
+
+
+.initial1{
+    visibility: hidden;
+    height: 0px;
+}
+
+
+
+
+
+
+.initial .inputs{
+    flex-direction: row;
+}
+
+.initial .inputs p{
+    color: #edf7f6;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+
+.initial input{
+    background-color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    color: #808080;
+    /* border: 2px solid #0000; */
+    /* padding-left: 3px; */
+    text-align: center;
+    outline:none;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+button{
+    height: 30px;
+    width: 80px;
+    background-color: #edf7f6;
+    color: #262626;
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #262626;
+    color: #edf7f6;
+}
+
+
+
+
+
+
+
+.started{
+    visibility:visible;
+    height: 250px;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.start{
+    visibility: hidden;
+    height: 0px;
+}
+
+
+
+.started .buttons{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.started .time{
+    flex-direction: row;
+    font-size: 50px;
+    color: #edf7f6;
+}
+
+.started .time input{
+    background: none;
+    border: none;
+    outline: none;
+    color: #edf7f6;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+}
+
+/* .started .time .p{
+    font-size: 30px;
+} */
+
+.started .time .seperator{
+    align-self: start;
+    margin: 0px 10px;
+}
+
+.started .time .tag{
+    font-size: 30px;
+    text-align: center;
+}
+
